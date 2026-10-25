@@ -4,6 +4,13 @@ module "rgs" {
 }
 
 module "vnets" {
-  source = "../../virtual_network"
-  vnets  = var.vnetsmain
+  depends_on = [module.rgs]
+  source     = "../../virtual_network"
+  vnets      = var.vnetsmain
+}
+
+module "snets" {
+  depends_on = [module.vnets]
+  source     = "../../subnet"
+  snets      = var.snetmain
 }
