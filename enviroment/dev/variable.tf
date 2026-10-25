@@ -1,0 +1,2 @@
+variable "rgsmain" {}
+variable "vnetsmain" {}
