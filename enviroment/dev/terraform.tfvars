@@ -28,7 +28,7 @@ snetmain = {
   snet1 = {
     name                 = "snet-dev-frontend"
     resource_group_name  = "rg-dev-app"
-    virtual_network_name = "vnet-dev-appa"
+    virtual_network_name = "vnet-dev-app"
     address_prefixes     = ["10.100.1.0/24"]
   }
   snet2 = {
